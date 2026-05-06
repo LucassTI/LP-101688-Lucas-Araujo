@@ -12,7 +12,7 @@ class Jogo:
     def resultado(self):
         print(f"Jogo que deseja jogar: {self.nome}")
         print(f"Estilo do jogo: {self.estilo}")
-        print(f"Plataforma que desja jogar: {self.plataforma}")
+        print(f"Plataforma que deseja jogar: {self.plataforma}")
 
 NOME_ARQUIVO = 'jogos_futuros.csv'
 
@@ -27,17 +27,17 @@ def ler_jogos():
         with open (NOME_ARQUIVO, 'r') as arquivo:
             for linha in arquivo:
                 nome, estilo, plataforma = linha.strip().split(',')
-                lista_jogos.append(nome, estilo, plataforma)
+                lista_jogos.append(Jogo(nome, estilo, plataforma))
 
-                for livro in lista_jogos:
+                for jogo in lista_jogos:
                     jogo.resultado()
                     print('=' * 10)
-    except FileExistsError:
+    except FileNotFoundError:
         print("=( Arquivo não encontrado =(")
         
 
 
-        while True: 
+while True: 
             print((("""
                 = JOGOS QUE FUTURAMENTE DESEJO JOGAR =\n
                     1- CADASTRAR JOGO
@@ -72,5 +72,5 @@ def ler_jogos():
                     break
                     
                 case _:
-                    print("= Opção Inválida =")
+                    print("= Opção Inválida =\n")
                     
