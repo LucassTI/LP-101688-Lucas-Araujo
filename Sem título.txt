@@ -1,0 +1,43 @@
+
+Circuito 5 — Segunda Lei de Ohm
+Objetivo
+
+Relacionar comprimento e espessura do condutor com resistência elétrica.
+
+Simulação sugerida
+
+Como o Tinkercad não altera diretamente resistividade física dos fios:
+
+Estratégia didática
+
+Utilizar resistores diferentes para simular:
+
+Fio mais longo → maior resistência
+Fio mais grosso → menor resistência
+Componentes
+Fonte 9V
+Resistores:
+
+Explicação teórica
+Segunda Lei de Ohm
+
+Onde:
+
+R = resistência
+ρ = resistividade
+L = comprimento
+A = área
+Passo a passo
+Montagem
+Monte um circuito simples com resistor de 100 Ω.
+Meça corrente.
+Troque por resistor de 330 Ω.
+Repita para 1 kΩ.
+Compare os resultados.
+Perguntas
+
+O que acontece com a corrente quando a resistência aumenta?
+	A corrente elétrica diminui
+
+Qual relação existe entre comprimento e resistência?
+      A resistência elétrica aumenta quando o comprimento do fio aumenta.
