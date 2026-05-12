@@ -1,43 +1,92 @@
-/* RESET DE CONFIGURAÇÕES DO NAVEGADOR */
+/* Reset das Config da página
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.index{
+    background-image:url(assets/giphy.gif);
+    background-position-y: 90cm;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.index2{
+    background-image:url();
+    background-position-y: 90cm;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+h1{
+    text-align: center;
+    color: mediumturquoise;
+    font-size: 100;
+    
+}
+h2{
+    font-size: 50;
+    position: static;
+}
+
+h3
+button{
+    background-color: rgba(178, 34, 34, 0.523);
+    text-align: center;
+    font-size: 18px;
+    margin: 15px;
+} */
+
+/* Reset e Centralização - Vale para as DUAS páginas */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-image: url("assets/background\ site.jpg");
+    /* Isso centraliza o conteúdo em qualquer página */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
-    /* background-color: rgb(7, 113, 242); */
 }
 
+/* --- Fundo da Página 1 --- */
+.index {
+    background-image:url(giphy.gif)
+}
+
+/* --- Fundo da Página 2 --- */
+.index2 {
+    background-image: url(homem_de_ferro_reproducao.jpg); /* Coloque o caminho da 2ª imagem aqui */
+    background-color: #000; /* Um fundo reserva caso a imagem suma */
+}
+
+/* Estilos de texto (Lembre de usar PX no font-size!) */
 h1 {
+    color: mediumturquoise;
+    font-size: 80px;
     text-align: center;
-    color: rgb(255, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 30px 0;
 }
 
-p {
-text-align: center;
-color: rgb(8, 215, 230);
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+h2 {
+    font-size: 50px;
+    color: white;
 }
 
 button {
-    display: block;
-    padding: 0.4px 34px;
-    border-radius: 20px;
+    background-color: rgba(178, 34, 34, 0.5);
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 15px;
+    border: none;
     cursor: pointer;
-    margin: 20px auto;
-    background-color: aqua;
-
-
 }
